@@ -7,7 +7,7 @@ contract Assignment1Test is Test {
     address public walletAddress;
 
     function setUp() public {
-        walletAddress = <write-your-wallet-address-here>; 
+        walletAddress = 0xd175C97ed5fc71EcA4DD70Df7aC799eF808a6942; 
     }
 
     function test_MetamaskAddress() external {
