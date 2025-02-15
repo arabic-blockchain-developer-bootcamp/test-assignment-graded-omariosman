@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: test1
-        setup-command: curl -L https://foundry.paradigm.xyz | bash && source ~/.bashrc
-          && foundryup
+        setup-command: bash -c "curl -L https://foundry.paradigm.xyz | bash && source
+          ~/.bashrc && foundryup"
         command: forge test --mt test_MetamaskAddress
         timeout: 10
         max-score: 8
